@@ -322,6 +322,10 @@ The `starter-permissions.json` file contains a curated list of commands for Clau
 
 > **Note:** Review the permissions before using. Remove any commands you'd prefer Claude to ask about first.
 
+**Session retention (`cleanupPeriodDays`):**
+
+The file also sets `cleanupPeriodDays: 365` at the top level. This extends Claude Code's chat transcript retention from the default 30 days to a full year, so older sessions aren't pruned on startup. Lower the value if you prefer a shorter retention window.
+
 ### Issue Tracking with Beads
 
 Beads is a lightweight CLI for tracking work items. It integrates with your git workflow:
